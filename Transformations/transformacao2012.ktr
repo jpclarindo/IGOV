@@ -1,0 +1,3036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>transformacao2012</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#x2f;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2014&#x2f;07&#x2f;04 21&#x3a;04&#x3a;38.386</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2014&#x2f;07&#x2f;04 21&#x3a;04&#x3a;38.386</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <order>
+  <hop> <from>Abrir Bolsa Familia 2012</from><to>Diminuir Campos</to><enabled>Y</enabled> </hop>
+  <hop> <from>Diminuir Campos</from><to>Teste 1</to><enabled>Y</enabled> </hop>
+  <hop> <from>Teste 1</from><to>UF &#x3d; AL</to><enabled>Y</enabled> </hop>
+  <hop> <from>UF &#x3d; AL</from><to>Teste 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>MongoDB &#x28;obitos2011&#x29;</from><to>Teste 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Teste 3</from><to>Idade &#x3c; 18</to><enabled>Y</enabled> </hop>
+  <hop> <from>Idade &#x3c; 18</from><to>Distribuidor</to><enabled>Y</enabled> </hop>
+  <hop> <from>Teste 2</from><to>Convers&#xe3;o SIAFI&#x2f;IBGE_6D</to><enabled>Y</enabled> </hop>
+  <hop> <from>Cidades</from><to>Convers&#xe3;o SIAFI&#x2f;IBGE_6D</to><enabled>Y</enabled> </hop>
+  <hop> <from>Distribuidor</from><to>Match Bolsa Familia &#x2f; SIM</to><enabled>Y</enabled> </hop>
+  <hop> <from>Convers&#xe3;o SIAFI&#x2f;IBGE_6D</from><to>Match Bolsa Familia &#x2f; SIM</to><enabled>Y</enabled> </hop>
+  <hop> <from>Match Bolsa Familia &#x2f; SIM</from><to>Retirada de repeti&#xe7;&#xf5;es</to><enabled>Y</enabled> </hop>
+  <hop> <from>Retirada de repeti&#xe7;&#xf5;es</from><to>Diminuir Campos 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Distribuidor</from><to>Retirar beneficiados da lista</to><enabled>Y</enabled> </hop>
+  <hop> <from>Diminuir Campos 2</from><to>Retirar beneficiados da lista</to><enabled>Y</enabled> </hop>
+  <hop> <from>Retirar beneficiados da lista</from><to>Inserir nome da cidade</to><enabled>Y</enabled> </hop>
+  <hop> <from>Cidades 2</from><to>Inserir nome da cidade</to><enabled>Y</enabled> </hop>
+  <hop> <from>Inserir nome da cidade</from><to>Diminuir Campos 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Distribuidor 2</from><to>Importar para MongoDB</to><enabled>Y</enabled> </hop>
+  <hop> <from>Distribuidor 2</from><to>Exportar para arquivo</to><enabled>Y</enabled> </hop>
+  <hop> <from>Diminuir Campos 3</from><to>Retirada de repeti&#xe7;&#xf5;es 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Retirada de repeti&#xe7;&#xf5;es 2</from><to>Distribuidor 2</to><enabled>Y</enabled> </hop>
+  </order>
+  <step>
+    <name>Teste 1</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>707</xloc>
+      <yloc>170</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Teste 2</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>969</xloc>
+      <yloc>170</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Diminuir Campos</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>UF</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>C&#xfffd;digo_SIAFI_Munic&#xfffd;pio</name>
+        <rename>SIAFI</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>C&#xfffd;digo_Fun&#xfffd;&#xfffd;o</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>C&#xfffd;digo_Subfun&#xfffd;&#xfffd;o</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>C&#xfffd;digo_Programa</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>C&#xfffd;digo_A&#xfffd;&#xfffd;o</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NIS_Favorecido</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Nome_Favorecido</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Fonte_Finalidade</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Valor_Parcela</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>C&#xfffd;digo_Fun&#xfffd;&#xfffd;o</name>
+      </remove>      <remove>        <name>C&#xfffd;digo_Subfun&#xfffd;&#xfffd;o</name>
+      </remove>      <remove>        <name>C&#xfffd;digo_Programa</name>
+      </remove>      <remove>        <name>C&#xfffd;digo_A&#xfffd;&#xfffd;o</name>
+      </remove>      <remove>        <name>NIS_Favorecido</name>
+      </remove>      <remove>        <name>Fonte_Finalidade</name>
+      </remove>      <remove>        <name>Valor_Parcela</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>541</xloc>
+      <yloc>170</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Abrir Bolsa Familia 2012</name>
+    <type>TextFileInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <accept_filenames>N</accept_filenames>
+    <passing_through_fields>N</passing_through_fields>
+    <accept_field/>
+    <accept_stepname/>
+    <separator>	</separator>
+    <enclosure>&#x22;</enclosure>
+    <enclosure_breaks>N</enclosure_breaks>
+    <escapechar/>
+    <header>Y</header>
+    <nr_headerlines>1</nr_headerlines>
+    <footer>N</footer>
+    <nr_footerlines>1</nr_footerlines>
+    <line_wrapped>N</line_wrapped>
+    <nr_wraps>1</nr_wraps>
+    <layout_paged>N</layout_paged>
+    <nr_lines_per_page>80</nr_lines_per_page>
+    <nr_lines_doc_header>0</nr_lines_doc_header>
+    <noempty>Y</noempty>
+    <include>N</include>
+    <include_field/>
+    <rownum>N</rownum>
+    <rownumByFile>N</rownumByFile>
+    <rownum_field/>
+    <format>DOS</format>
+    <encoding>ISO-8859-1</encoding>
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <file>
+      <name>&#x2f;media&#x2f;4A36DEEE36DED9D1&#x2f;bin&#x2f;BolsaFamilia2012.csv</name>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      <name/>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      <type>CSV</type>
+      <compression>None</compression>
+    </file>
+    <filters>
+    </filters>
+    <fields>
+      <field>
+        <name>UF</name>
+        <type>String</type>
+        <format/>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>C&#xfffd;digo_SIAFI_Munic&#xfffd;pio</name>
+        <type>String</type>
+        <format>&#x23;</format>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>Nome_Munic&#xfffd;pio</name>
+        <type>String</type>
+        <format/>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>25</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>C&#xfffd;digo_Fun&#xfffd;&#xfffd;o</name>
+        <type>String</type>
+        <format>&#x23;</format>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>C&#xfffd;digo_Subfun&#xfffd;&#xfffd;o</name>
+        <type>String</type>
+        <format>&#x23;</format>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>C&#xfffd;digo_Programa</name>
+        <type>String</type>
+        <format>&#x23;</format>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>C&#xfffd;digo_A&#xfffd;&#xfffd;o</name>
+        <type>String</type>
+        <format>&#x23;</format>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>NIS_Favorecido</name>
+        <type>String</type>
+        <format>&#x23;</format>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>Nome_Favorecido</name>
+        <type>String</type>
+        <format/>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>39</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>Fonte_Finalidade</name>
+        <type>String</type>
+        <format/>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>30</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>Valor_Parcela</name>
+        <type>String</type>
+        <format>&#x23;.&#x23;</format>
+        <currency>R&#x24;</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+    </fields>
+    <limit>0</limit>
+    <error_ignored>N</error_ignored>
+    <skip_bad_files>N</skip_bad_files>
+    <file_error_field/>
+    <file_error_message_field/>
+    <error_line_skipped>N</error_line_skipped>
+    <error_count_field/>
+    <error_fields_field/>
+    <error_text_field/>
+    <bad_line_files_destination_directory/>
+    <bad_line_files_extension>warning</bad_line_files_extension>
+    <error_line_files_destination_directory/>
+    <error_line_files_extension>error</error_line_files_extension>
+    <line_number_files_destination_directory/>
+    <line_number_files_extension>line</line_number_files_extension>
+    <date_format_lenient>Y</date_format_lenient>
+    <date_format_locale>pt_BR</date_format_locale>
+    <shortFileFieldName/>
+    <pathFieldName/>
+    <hiddenFieldName/>
+    <lastModificationTimeFieldName/>
+    <uriNameFieldName/>
+    <rootUriNameFieldName/>
+    <extensionFieldName/>
+    <sizeFieldName/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>359</xloc>
+      <yloc>170</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>UF &#x3d; AL</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to/>
+<send_false_to/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <conditions>
+  <condition>
+   <negated>N</negated>
+   <operator>AND</operator>
+   <leftvalue>UF</leftvalue>
+   <function>&#x3d;</function>
+   <rightvalue/>
+   <value><name>constant</name><type>String</type><text>AL</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value>   </condition>
+  </conditions>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>839</xloc>
+      <yloc>169</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>MongoDB &#x28;obitos2011&#x29;</name>
+    <type>MongoDbInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <hostname>localhost</hostname>
+    <port>27017</port>
+    <use_all_replica_members>N</use_all_replica_members>
+    <db_name>sim</db_name>
+    <fields_name/>
+    <collection>obitos2012</collection>
+    <json_field_name>json</json_field_name>
+    <json_query>&#x7b; &#x22;condcausaobito.causa&#x22; &#x3a; &#x7b; &#x27;&#x24;regex&#x27; &#x3a; &#x22;E4.&#x2a;&#x22;, &#x27;&#x24;options&#x27; &#x3a; &#x22;i&#x22; &#x7d; &#x7d;</json_query>
+    <auth_user/>
+    <auth_password>Encrypted </auth_password>
+    <auth_kerberos>N</auth_kerberos>
+    <connect_timeout/>
+    <socket_timeout/>
+    <read_preference>primary</read_preference>
+    <output_json>N</output_json>
+    <query_is_pipeline>N</query_is_pipeline>
+    <execute_for_each_row>N</execute_for_each_row>
+
+    <mongo_fields>
+      <mongo_field>
+        <field_name>codregres</field_name>
+
+        <field_path>&#x24;.residencia.codregres</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>medico</field_name>
+
+        <field_path>&#x24;.informacoesmedico.medico</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>cepocor</field_name>
+
+        <field_path>&#x24;.ocorrencia.cepocor</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>lococor</field_name>
+
+        <field_path>&#x24;.ocorrencia.lococor</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codmunocor</field_name>
+
+        <field_path>&#x24;.ocorrencia.codmunocor</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>crm</field_name>
+
+        <field_path>&#x24;.informacoesmedico.crm</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codendres</field_name>
+
+        <field_path>&#x24;.residencia.codendres</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>esc</field_name>
+
+        <field_path>&#x24;.identificacao.esc</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>natural</field_name>
+
+        <field_path>&#x24;.identificacao.natural</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>dtatestado</field_name>
+
+        <field_path>&#x24;.informacoesmedico.dtatestado</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>horaobito</field_name>
+
+        <field_path>&#x24;.identificacao.horaobito</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>numres</field_name>
+
+        <field_path>&#x24;.residencia.numres</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>endocor</field_name>
+
+        <field_path>&#x24;.ocorrencia.endocor</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>coddisocor</field_name>
+
+        <field_path>&#x24;.ocorrencia.coddisocor</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codestres</field_name>
+
+        <field_path>&#x24;.residencia.codestres</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>assistmed</field_name>
+
+        <field_path>&#x24;.condcausaobito.assistmed</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>numerodn</field_name>
+
+        <field_path>&#x24;.obfetmenor1ano.numerodn</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>estciv</field_name>
+
+        <field_path>&#x24;.identificacao.estciv</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>tipobito</field_name>
+
+        <field_path>&#x24;.identificacao.tipobito</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>exame</field_name>
+
+        <field_path>&#x24;.condcausaobito.exame</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>dsexplica</field_name>
+
+        <field_path>&#x24;.condcausaobito.dsexplica</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>dtnasc</field_name>
+
+        <field_path>&#x24;.identificacao.dtnasc</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>gestacao</field_name>
+
+        <field_path>&#x24;.obfetmenor1ano.gestacao</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>dtregcart</field_name>
+
+        <field_path>&#x24;.cartorio.dtregcart</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>baires</field_name>
+
+        <field_path>&#x24;.residencia.baires</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>contato</field_name>
+
+        <field_path>&#x24;.informacoesmedico.contato</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>coddisres</field_name>
+
+        <field_path>&#x24;.residencia.coddisres</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>parto</field_name>
+
+        <field_path>&#x24;.obfetmenor1ano.parto</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>complres</field_name>
+
+        <field_path>&#x24;.residencia.complres</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>idademae</field_name>
+
+        <field_path>&#x24;.obfetmenor1ano.idademae</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>qtdfilvivo</field_name>
+
+        <field_path>&#x24;.obfetmenor1ano.qtdfilvivo</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codmunres</field_name>
+
+        <field_path>&#x24;.residencia.codmunres</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>qtdfilmort</field_name>
+
+        <field_path>&#x24;.obfetmenor1ano.qtdfilmort</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>linhaii</field_name>
+
+        <field_path>&#x24;.condcausaobito.linhaii</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codendocor</field_name>
+
+        <field_path>&#x24;.ocorrencia.codendocor</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>ocupmae</field_name>
+
+        <field_path>&#x24;.obfetmenor1ano.ocupmae</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>endres</field_name>
+
+        <field_path>&#x24;.residencia.endres</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>cepres</field_name>
+
+        <field_path>&#x24;.residencia.cepres</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>escmae</field_name>
+
+        <field_path>&#x24;.obfetmenor1ano.escmae</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codbaires</field_name>
+
+        <field_path>&#x24;.residencia.codbaires</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>dtobito</field_name>
+
+        <field_path>&#x24;.identificacao.dtobito</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codbaiocor</field_name>
+
+        <field_path>&#x24;.ocorrencia.codbaiocor</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>_id</field_name>
+
+        <field_path>&#x24;._id</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>tpassina</field_name>
+
+        <field_path>&#x24;.informacoesmedico.tpassina</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>nomepai</field_name>
+
+        <field_path>&#x24;.identificacao.nomepai</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codmuncart</field_name>
+
+        <field_path>&#x24;.cartorio.codmuncart</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>dstempo</field_name>
+
+        <field_path>&#x24;.condcausaobito.dstempo</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codcart</field_name>
+
+        <field_path>&#x24;.cartorio.codcart</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>numendocor</field_name>
+
+        <field_path>&#x24;.ocorrencia.numendocor</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>necropsia</field_name>
+
+        <field_path>&#x24;.condcausaobito.necropsia</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>numerodv</field_name>
+
+        <field_path>&#x24;.numerodv</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codestocor</field_name>
+
+        <field_path>&#x24;.ocorrencia.codestocor</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>baiocor</field_name>
+
+        <field_path>&#x24;.ocorrencia.baiocor</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>obitoparto</field_name>
+
+        <field_path>&#x24;.obfetmenor1ano.obitoparto</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>numerodo</field_name>
+
+        <field_path>&#x24;.numerodo</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>sexo</field_name>
+
+        <field_path>&#x24;.identificacao.sexo</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>obitopuerp</field_name>
+
+        <field_path>&#x24;.condcausaobito.obitopuerp</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>obitograv</field_name>
+
+        <field_path>&#x24;.condcausaobito.obitograv</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>linhab</field_name>
+
+        <field_path>&#x24;.condcausaobito.causadamorte.linhab</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>linhaa</field_name>
+
+        <field_path>&#x24;.condcausaobito.causadamorte.linhaa</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>complocor</field_name>
+
+        <field_path>&#x24;.ocorrencia.complocor</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>linhad</field_name>
+
+        <field_path>&#x24;.condcausaobito.causadamorte.linhad</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>linhac</field_name>
+
+        <field_path>&#x24;.condcausaobito.causadamorte.linhac</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>numregcart</field_name>
+
+        <field_path>&#x24;.cartorio.numregcart</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>ocup</field_name>
+
+        <field_path>&#x24;.identificacao.ocup</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codpaisres</field_name>
+
+        <field_path>&#x24;.residencia.codpaisres</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>racacor</field_name>
+
+        <field_path>&#x24;.identificacao.racacor</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>causa</field_name>
+
+        <field_path>&#x24;.condcausaobito.causa</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>endacid</field_name>
+
+        <field_path>&#x24;.causasexternas.endacid</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codregocor</field_name>
+
+        <field_path>&#x24;.ocorrencia.codregocor</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codmunnatu</field_name>
+
+        <field_path>&#x24;.identificacao.codmunnatu</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>nomemae</field_name>
+
+        <field_path>&#x24;.identificacao.nomemae</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codestab</field_name>
+
+        <field_path>&#x24;.ocorrencia.codestab</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>peso</field_name>
+
+        <field_path>&#x24;.obfetmenor1ano.peso</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>gravidez</field_name>
+
+        <field_path>&#x24;.obfetmenor1ano.gravidez</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>cirurgia</field_name>
+
+        <field_path>&#x24;.condcausaobito.cirurgia</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>dsevento</field_name>
+
+        <field_path>&#x24;.causasexternas.dsevento</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>acidtrab</field_name>
+
+        <field_path>&#x24;.causasexternas.acidtrab</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>numsus</field_name>
+
+        <field_path>&#x24;.identificacao.numsus</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>nome</field_name>
+
+        <field_path>&#x24;.identificacao.nome</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>codestcart</field_name>
+
+        <field_path>&#x24;.cartorio.codestcart</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>idade</field_name>
+
+        <field_path>&#x24;.identificacao.idade</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+      <mongo_field>
+        <field_name>circobito</field_name>
+
+        <field_path>&#x24;.causasexternas.circobito</field_path>
+
+        <field_type>String</field_type>
+
+      </mongo_field>
+    </mongo_fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>370</xloc>
+      <yloc>344</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Teste 3</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>535</xloc>
+      <yloc>344</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Idade &#x3c; 18</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to/>
+<send_false_to/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <conditions>
+  <condition>
+   <negated>N</negated>
+   <leftvalue>idade</leftvalue>
+   <function>&#x3c;</function>
+   <rightvalue/>
+   <value><name>constant</name><type>String</type><text>418</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value>   </condition>
+  <condition>
+   <negated>N</negated>
+   <operator>AND</operator>
+   <leftvalue>idade</leftvalue>
+   <function>&#x3e;</function>
+   <rightvalue/>
+   <value><name>constant</name><type>String</type><text>299</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value>   </condition>
+  </conditions>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>669</xloc>
+      <yloc>344</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Distribuidor</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>828</xloc>
+      <yloc>345</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Cidades</name>
+    <type>TextFileInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <accept_filenames>N</accept_filenames>
+    <passing_through_fields>N</passing_through_fields>
+    <accept_field/>
+    <accept_stepname/>
+    <separator>,</separator>
+    <enclosure>&#x22;</enclosure>
+    <enclosure_breaks>N</enclosure_breaks>
+    <escapechar/>
+    <header>Y</header>
+    <nr_headerlines>1</nr_headerlines>
+    <footer>N</footer>
+    <nr_footerlines>1</nr_footerlines>
+    <line_wrapped>N</line_wrapped>
+    <nr_wraps>1</nr_wraps>
+    <layout_paged>N</layout_paged>
+    <nr_lines_per_page>80</nr_lines_per_page>
+    <nr_lines_doc_header>0</nr_lines_doc_header>
+    <noempty>Y</noempty>
+    <include>N</include>
+    <include_field/>
+    <rownum>N</rownum>
+    <rownumByFile>N</rownumByFile>
+    <rownum_field/>
+    <format>Unix</format>
+    <encoding>UTF-8</encoding>
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <file>
+      <name>&#x2f;media&#x2f;4A36DEEE36DED9D1&#x2f;bin&#x2f;cidadesal.csv</name>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      <type>CSV</type>
+      <compression>None</compression>
+    </file>
+    <filters>
+    </filters>
+    <fields>
+      <field>
+        <name>Codigo_IBGE</name>
+        <type>String</type>
+        <format>&#x23;</format>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>Codigo_SIAFI</name>
+        <type>String</type>
+        <format>&#x23;</format>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>Estado</name>
+        <type>String</type>
+        <format/>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>Cidade</name>
+        <type>String</type>
+        <format/>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>23</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+    </fields>
+    <limit>0</limit>
+    <error_ignored>N</error_ignored>
+    <skip_bad_files>N</skip_bad_files>
+    <file_error_field/>
+    <file_error_message_field/>
+    <error_line_skipped>N</error_line_skipped>
+    <error_count_field/>
+    <error_fields_field/>
+    <error_text_field/>
+    <bad_line_files_destination_directory/>
+    <bad_line_files_extension>warning</bad_line_files_extension>
+    <error_line_files_destination_directory/>
+    <error_line_files_extension>error</error_line_files_extension>
+    <line_number_files_destination_directory/>
+    <line_number_files_extension>line</line_number_files_extension>
+    <date_format_lenient>Y</date_format_lenient>
+    <date_format_locale>pt_BR</date_format_locale>
+    <shortFileFieldName/>
+    <pathFieldName/>
+    <hiddenFieldName/>
+    <lastModificationTimeFieldName/>
+    <uriNameFieldName/>
+    <rootUriNameFieldName/>
+    <extensionFieldName/>
+    <sizeFieldName/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1147</xloc>
+      <yloc>41</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Convers&#xe3;o SIAFI&#x2f;IBGE_6D</name>
+    <type>JoinRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <cache_size>500</cache_size>
+      <main/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>Codigo_SIAFI</leftvalue>
+ <function>&#x3d;</function>
+ <rightvalue>SIAFI</rightvalue>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1147</xloc>
+      <yloc>171</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Match Bolsa Familia &#x2f; SIM</name>
+    <type>JoinRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <cache_size>500</cache_size>
+      <main/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <conditions>
+  <condition>
+   <negated>N</negated>
+   <leftvalue>Codigo_IBGE</leftvalue>
+   <function>&#x3d;</function>
+   <rightvalue>codmunres</rightvalue>
+   </condition>
+  <condition>
+   <negated>N</negated>
+   <operator>AND</operator>
+   <conditions>
+    <condition>
+     <negated>N</negated>
+     <leftvalue>Nome_Favorecido</leftvalue>
+     <function>&#x3d;</function>
+     <rightvalue>nomepai</rightvalue>
+     </condition>
+    <condition>
+     <negated>N</negated>
+     <operator>OR</operator>
+     <leftvalue>Nome_Favorecido</leftvalue>
+     <function>&#x3d;</function>
+     <rightvalue>nomemae</rightvalue>
+     </condition>
+    </conditions>
+   </condition>
+  </conditions>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1147</xloc>
+      <yloc>345</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Retirada de repeti&#xe7;&#xf5;es</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <count_rows>Y</count_rows>
+      <count_field/>
+      <reject_duplicate_row>N</reject_duplicate_row>
+      <error_description/>
+    <fields>      <field>        <name>nome</name>
+        <case_insensitive>N</case_insensitive>
+        </field>      </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1147</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Diminuir Campos 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>codregres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>medico</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>cepocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lococor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codmunocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>crm</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codendres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>esc</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>natural</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dtatestado</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>horaobito</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>endocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>coddisocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codestres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>assistmed</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numerodn</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>estciv</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tipobito</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>exame</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dsexplica</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dtnasc</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>gestacao</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dtregcart</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>baires</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>contato</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>coddisres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>parto</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>complres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>idademae</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>qtdfilvivo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codmunres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>qtdfilmort</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>linhaii</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codendocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ocupmae</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>endres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>cepres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>escmae</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codbaires</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dtobito</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codbaiocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>_id</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tpassina</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nomepai</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codmuncart</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dstempo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codcart</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numendocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>necropsia</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numerodv</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codestocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>baiocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>obitoparto</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numerodo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>sexo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>obitopuerp</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>obitograv</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>linhab</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>linhaa</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>complocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>linhad</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>linhac</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numregcart</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ocup</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codpaisres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>racacor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>causa</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>endacid</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codregocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codmunnatu</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nomemae</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codestab</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>peso</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>gravidez</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>cirurgia</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dsevento</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>acidtrab</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numsus</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nome</name>
+        <rename>nomeben</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codestcart</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>idade</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>circobito</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>UF</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SIAFI</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Nome_Favorecido</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Codigo_IBGE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Codigo_SIAFI</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Estado</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Cidade</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>codregres</name>
+      </remove>      <remove>        <name>medico</name>
+      </remove>      <remove>        <name>cepocor</name>
+      </remove>      <remove>        <name>lococor</name>
+      </remove>      <remove>        <name>codmunocor</name>
+      </remove>      <remove>        <name>crm</name>
+      </remove>      <remove>        <name>codendres</name>
+      </remove>      <remove>        <name>esc</name>
+      </remove>      <remove>        <name>natural</name>
+      </remove>      <remove>        <name>dtatestado</name>
+      </remove>      <remove>        <name>horaobito</name>
+      </remove>      <remove>        <name>numres</name>
+      </remove>      <remove>        <name>endocor</name>
+      </remove>      <remove>        <name>coddisocor</name>
+      </remove>      <remove>        <name>codestres</name>
+      </remove>      <remove>        <name>assistmed</name>
+      </remove>      <remove>        <name>numerodn</name>
+      </remove>      <remove>        <name>estciv</name>
+      </remove>      <remove>        <name>tipobito</name>
+      </remove>      <remove>        <name>exame</name>
+      </remove>      <remove>        <name>dsexplica</name>
+      </remove>      <remove>        <name>dtnasc</name>
+      </remove>      <remove>        <name>gestacao</name>
+      </remove>      <remove>        <name>dtregcart</name>
+      </remove>      <remove>        <name>baires</name>
+      </remove>      <remove>        <name>contato</name>
+      </remove>      <remove>        <name>coddisres</name>
+      </remove>      <remove>        <name>parto</name>
+      </remove>      <remove>        <name>complres</name>
+      </remove>      <remove>        <name>idademae</name>
+      </remove>      <remove>        <name>qtdfilvivo</name>
+      </remove>      <remove>        <name>codmunres</name>
+      </remove>      <remove>        <name>qtdfilmort</name>
+      </remove>      <remove>        <name>linhaii</name>
+      </remove>      <remove>        <name>codendocor</name>
+      </remove>      <remove>        <name>ocupmae</name>
+      </remove>      <remove>        <name>endres</name>
+      </remove>      <remove>        <name>cepres</name>
+      </remove>      <remove>        <name>escmae</name>
+      </remove>      <remove>        <name>codbaires</name>
+      </remove>      <remove>        <name>dtobito</name>
+      </remove>      <remove>        <name>codbaiocor</name>
+      </remove>      <remove>        <name>_id</name>
+      </remove>      <remove>        <name>tpassina</name>
+      </remove>      <remove>        <name>nomepai</name>
+      </remove>      <remove>        <name>codmuncart</name>
+      </remove>      <remove>        <name>dstempo</name>
+      </remove>      <remove>        <name>codcart</name>
+      </remove>      <remove>        <name>numendocor</name>
+      </remove>      <remove>        <name>necropsia</name>
+      </remove>      <remove>        <name>numerodv</name>
+      </remove>      <remove>        <name>codestocor</name>
+      </remove>      <remove>        <name>baiocor</name>
+      </remove>      <remove>        <name>obitoparto</name>
+      </remove>      <remove>        <name>numerodo</name>
+      </remove>      <remove>        <name>sexo</name>
+      </remove>      <remove>        <name>obitopuerp</name>
+      </remove>      <remove>        <name>obitograv</name>
+      </remove>      <remove>        <name>linhab</name>
+      </remove>      <remove>        <name>linhaa</name>
+      </remove>      <remove>        <name>complocor</name>
+      </remove>      <remove>        <name>linhad</name>
+      </remove>      <remove>        <name>linhac</name>
+      </remove>      <remove>        <name>numregcart</name>
+      </remove>      <remove>        <name>ocup</name>
+      </remove>      <remove>        <name>codpaisres</name>
+      </remove>      <remove>        <name>racacor</name>
+      </remove>      <remove>        <name>causa</name>
+      </remove>      <remove>        <name>endacid</name>
+      </remove>      <remove>        <name>codregocor</name>
+      </remove>      <remove>        <name>codmunnatu</name>
+      </remove>      <remove>        <name>nomemae</name>
+      </remove>      <remove>        <name>codestab</name>
+      </remove>      <remove>        <name>peso</name>
+      </remove>      <remove>        <name>gravidez</name>
+      </remove>      <remove>        <name>cirurgia</name>
+      </remove>      <remove>        <name>dsevento</name>
+      </remove>      <remove>        <name>acidtrab</name>
+      </remove>      <remove>        <name>numsus</name>
+      </remove>      <remove>        <name>codestcart</name>
+      </remove>      <remove>        <name>idade</name>
+      </remove>      <remove>        <name>circobito</name>
+      </remove>      <remove>        <name>UF</name>
+      </remove>      <remove>        <name>SIAFI</name>
+      </remove>      <remove>        <name>Nome_Favorecido</name>
+      </remove>      <remove>        <name>Codigo_IBGE</name>
+      </remove>      <remove>        <name>Codigo_SIAFI</name>
+      </remove>      <remove>        <name>Estado</name>
+      </remove>      <remove>        <name>Cidade</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>992</xloc>
+      <yloc>482</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Retirar beneficiados da lista</name>
+    <type>JoinRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <cache_size>500</cache_size>
+      <main/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>nome</leftvalue>
+ <function>&#x3c;&#x3e;</function>
+ <rightvalue>nomeben</rightvalue>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>828</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Inserir nome da cidade</name>
+    <type>JoinRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <cache_size>500</cache_size>
+      <main/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>codmunres</leftvalue>
+ <function>&#x3d;</function>
+ <rightvalue>Codigo_IBGE</rightvalue>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>655</xloc>
+      <yloc>479</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Cidades 2</name>
+    <type>TextFileInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <accept_filenames>N</accept_filenames>
+    <passing_through_fields>N</passing_through_fields>
+    <accept_field/>
+    <accept_stepname/>
+    <separator>,</separator>
+    <enclosure>&#x22;</enclosure>
+    <enclosure_breaks>N</enclosure_breaks>
+    <escapechar/>
+    <header>Y</header>
+    <nr_headerlines>1</nr_headerlines>
+    <footer>N</footer>
+    <nr_footerlines>1</nr_footerlines>
+    <line_wrapped>N</line_wrapped>
+    <nr_wraps>1</nr_wraps>
+    <layout_paged>N</layout_paged>
+    <nr_lines_per_page>80</nr_lines_per_page>
+    <nr_lines_doc_header>0</nr_lines_doc_header>
+    <noempty>Y</noempty>
+    <include>N</include>
+    <include_field/>
+    <rownum>N</rownum>
+    <rownumByFile>N</rownumByFile>
+    <rownum_field/>
+    <format>Unix</format>
+    <encoding>UTF-8</encoding>
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <file>
+      <name>&#x2f;media&#x2f;4A36DEEE36DED9D1&#x2f;bin&#x2f;cidadesal.csv</name>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      <name/>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      <type>CSV</type>
+      <compression>None</compression>
+    </file>
+    <filters>
+    </filters>
+    <fields>
+      <field>
+        <name>Codigo_IBGE</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>Codigo_SIAFI</name>
+        <type>Integer</type>
+        <format>&#x23;</format>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>Estado</name>
+        <type>String</type>
+        <format/>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>2</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>Cidade</name>
+        <type>String</type>
+        <format/>
+        <currency>R&#x24;</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>23</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+    </fields>
+    <limit>0</limit>
+    <error_ignored>N</error_ignored>
+    <skip_bad_files>N</skip_bad_files>
+    <file_error_field/>
+    <file_error_message_field/>
+    <error_line_skipped>N</error_line_skipped>
+    <error_count_field/>
+    <error_fields_field/>
+    <error_text_field/>
+    <bad_line_files_destination_directory/>
+    <bad_line_files_extension>warning</bad_line_files_extension>
+    <error_line_files_destination_directory/>
+    <error_line_files_extension>error</error_line_files_extension>
+    <line_number_files_destination_directory/>
+    <line_number_files_extension>line</line_number_files_extension>
+    <date_format_lenient>Y</date_format_lenient>
+    <date_format_locale>pt_BR</date_format_locale>
+    <shortFileFieldName/>
+    <pathFieldName/>
+    <hiddenFieldName/>
+    <lastModificationTimeFieldName/>
+    <uriNameFieldName/>
+    <rootUriNameFieldName/>
+    <extensionFieldName/>
+    <sizeFieldName/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>654</xloc>
+      <yloc>593</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Diminuir Campos 3</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>codregres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>medico</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>cepocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lococor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codmunocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>crm</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codendres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>esc</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>natural</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dtatestado</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>horaobito</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>endocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>coddisocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codestres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>assistmed</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numerodn</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>estciv</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tipobito</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>exame</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dsexplica</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dtnasc</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>gestacao</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dtregcart</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>baires</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>contato</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>coddisres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>parto</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>complres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>idademae</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>qtdfilvivo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codmunres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>qtdfilmort</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>linhaii</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codendocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ocupmae</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>endres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>cepres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>escmae</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codbaires</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dtobito</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codbaiocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>_id</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tpassina</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nomepai</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codmuncart</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dstempo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codcart</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numendocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>necropsia</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numerodv</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codestocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>baiocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>obitoparto</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numerodo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>sexo</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>obitopuerp</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>obitograv</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>linhab</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>linhaa</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>complocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>linhad</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>linhac</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numregcart</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ocup</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codpaisres</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>racacor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>causa</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>endacid</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codregocor</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codmunnatu</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nomemae</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codestab</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>peso</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>gravidez</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>cirurgia</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dsevento</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>acidtrab</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>numsus</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nome</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>codestcart</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>idade</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>circobito</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nomeben</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Codigo_IBGE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Codigo_SIAFI</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Estado</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Cidade</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>codregres</name>
+      </remove>      <remove>        <name>medico</name>
+      </remove>      <remove>        <name>cepocor</name>
+      </remove>      <remove>        <name>lococor</name>
+      </remove>      <remove>        <name>codmunocor</name>
+      </remove>      <remove>        <name>crm</name>
+      </remove>      <remove>        <name>codendres</name>
+      </remove>      <remove>        <name>esc</name>
+      </remove>      <remove>        <name>natural</name>
+      </remove>      <remove>        <name>dtatestado</name>
+      </remove>      <remove>        <name>horaobito</name>
+      </remove>      <remove>        <name>numres</name>
+      </remove>      <remove>        <name>endocor</name>
+      </remove>      <remove>        <name>coddisocor</name>
+      </remove>      <remove>        <name>codestres</name>
+      </remove>      <remove>        <name>assistmed</name>
+      </remove>      <remove>        <name>numerodn</name>
+      </remove>      <remove>        <name>estciv</name>
+      </remove>      <remove>        <name>tipobito</name>
+      </remove>      <remove>        <name>exame</name>
+      </remove>      <remove>        <name>dsexplica</name>
+      </remove>      <remove>        <name>dtnasc</name>
+      </remove>      <remove>        <name>gestacao</name>
+      </remove>      <remove>        <name>dtregcart</name>
+      </remove>      <remove>        <name>contato</name>
+      </remove>      <remove>        <name>coddisres</name>
+      </remove>      <remove>        <name>parto</name>
+      </remove>      <remove>        <name>complres</name>
+      </remove>      <remove>        <name>idademae</name>
+      </remove>      <remove>        <name>qtdfilvivo</name>
+      </remove>      <remove>        <name>codmunres</name>
+      </remove>      <remove>        <name>qtdfilmort</name>
+      </remove>      <remove>        <name>linhaii</name>
+      </remove>      <remove>        <name>codendocor</name>
+      </remove>      <remove>        <name>ocupmae</name>
+      </remove>      <remove>        <name>endres</name>
+      </remove>      <remove>        <name>cepres</name>
+      </remove>      <remove>        <name>escmae</name>
+      </remove>      <remove>        <name>codbaires</name>
+      </remove>      <remove>        <name>dtobito</name>
+      </remove>      <remove>        <name>codbaiocor</name>
+      </remove>      <remove>        <name>_id</name>
+      </remove>      <remove>        <name>tpassina</name>
+      </remove>      <remove>        <name>codmuncart</name>
+      </remove>      <remove>        <name>dstempo</name>
+      </remove>      <remove>        <name>codcart</name>
+      </remove>      <remove>        <name>numendocor</name>
+      </remove>      <remove>        <name>necropsia</name>
+      </remove>      <remove>        <name>numerodv</name>
+      </remove>      <remove>        <name>codestocor</name>
+      </remove>      <remove>        <name>baiocor</name>
+      </remove>      <remove>        <name>obitoparto</name>
+      </remove>      <remove>        <name>numerodo</name>
+      </remove>      <remove>        <name>sexo</name>
+      </remove>      <remove>        <name>obitopuerp</name>
+      </remove>      <remove>        <name>obitograv</name>
+      </remove>      <remove>        <name>linhab</name>
+      </remove>      <remove>        <name>linhaa</name>
+      </remove>      <remove>        <name>complocor</name>
+      </remove>      <remove>        <name>linhad</name>
+      </remove>      <remove>        <name>linhac</name>
+      </remove>      <remove>        <name>numregcart</name>
+      </remove>      <remove>        <name>ocup</name>
+      </remove>      <remove>        <name>codpaisres</name>
+      </remove>      <remove>        <name>racacor</name>
+      </remove>      <remove>        <name>endacid</name>
+      </remove>      <remove>        <name>codregocor</name>
+      </remove>      <remove>        <name>codmunnatu</name>
+      </remove>      <remove>        <name>codestab</name>
+      </remove>      <remove>        <name>peso</name>
+      </remove>      <remove>        <name>gravidez</name>
+      </remove>      <remove>        <name>cirurgia</name>
+      </remove>      <remove>        <name>dsevento</name>
+      </remove>      <remove>        <name>acidtrab</name>
+      </remove>      <remove>        <name>numsus</name>
+      </remove>      <remove>        <name>codestcart</name>
+      </remove>      <remove>        <name>circobito</name>
+      </remove>      <remove>        <name>nomeben</name>
+      </remove>      <remove>        <name>Codigo_IBGE</name>
+      </remove>      <remove>        <name>Codigo_SIAFI</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>484</xloc>
+      <yloc>479</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Distribuidor 2</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>190</xloc>
+      <yloc>478</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Importar para MongoDB</name>
+    <type>MongoDbOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+
+    <mongo_host>localhost</mongo_host>
+
+    <mongo_port>27017</mongo_port>
+    <use_all_replica_members>N</use_all_replica_members>
+    <auth_kerberos>N</auth_kerberos>
+
+    <mongo_db>sim</mongo_db>
+
+    <mongo_collection>resultados2012</mongo_collection>
+
+    <batch_insert_size>100</batch_insert_size>
+    <connect_timeout/>
+    <socket_timeout/>
+    <read_preference>primary</read_preference>
+    <write_concern/>
+    <w_timeout/>
+    <journaled_writes>N</journaled_writes>
+
+    <truncate>N</truncate>
+
+    <update>N</update>
+
+    <upsert>N</upsert>
+
+    <multi>N</multi>
+
+    <modifier_update>N</modifier_update>
+    <write_retries>5</write_retries>
+    <write_retry_delay>10</write_retry_delay>
+
+    <mongo_fields>
+      <mongo_field>
+         <incoming_field_name>baires</incoming_field_name>
+
+         <mongo_doc_path/>
+
+         <use_incoming_field_name_as_mongo_field_name>Y</use_incoming_field_name_as_mongo_field_name>
+
+         <update_match_field>N</update_match_field>
+
+         <modifier_update_operation>N&#x2f;A</modifier_update_operation>
+
+         <modifier_policy/>
+
+         <json_field>N</json_field>
+
+      </mongo_field>
+      <mongo_field>
+         <incoming_field_name>nomepai</incoming_field_name>
+
+         <mongo_doc_path/>
+
+         <use_incoming_field_name_as_mongo_field_name>Y</use_incoming_field_name_as_mongo_field_name>
+
+         <update_match_field>N</update_match_field>
+
+         <modifier_update_operation>N&#x2f;A</modifier_update_operation>
+
+         <modifier_policy/>
+
+         <json_field>N</json_field>
+
+      </mongo_field>
+      <mongo_field>
+         <incoming_field_name>causa</incoming_field_name>
+
+         <mongo_doc_path/>
+
+         <use_incoming_field_name_as_mongo_field_name>Y</use_incoming_field_name_as_mongo_field_name>
+
+         <update_match_field>N</update_match_field>
+
+         <modifier_update_operation>N&#x2f;A</modifier_update_operation>
+
+         <modifier_policy/>
+
+         <json_field>N</json_field>
+
+      </mongo_field>
+      <mongo_field>
+         <incoming_field_name>nomemae</incoming_field_name>
+
+         <mongo_doc_path/>
+
+         <use_incoming_field_name_as_mongo_field_name>Y</use_incoming_field_name_as_mongo_field_name>
+
+         <update_match_field>N</update_match_field>
+
+         <modifier_update_operation>N&#x2f;A</modifier_update_operation>
+
+         <modifier_policy/>
+
+         <json_field>N</json_field>
+
+      </mongo_field>
+      <mongo_field>
+         <incoming_field_name>nome</incoming_field_name>
+
+         <mongo_doc_path/>
+
+         <use_incoming_field_name_as_mongo_field_name>Y</use_incoming_field_name_as_mongo_field_name>
+
+         <update_match_field>N</update_match_field>
+
+         <modifier_update_operation>N&#x2f;A</modifier_update_operation>
+
+         <modifier_policy/>
+
+         <json_field>N</json_field>
+
+      </mongo_field>
+      <mongo_field>
+         <incoming_field_name>idade</incoming_field_name>
+
+         <mongo_doc_path/>
+
+         <use_incoming_field_name_as_mongo_field_name>Y</use_incoming_field_name_as_mongo_field_name>
+
+         <update_match_field>N</update_match_field>
+
+         <modifier_update_operation>N&#x2f;A</modifier_update_operation>
+
+         <modifier_policy/>
+
+         <json_field>N</json_field>
+
+      </mongo_field>
+      <mongo_field>
+         <incoming_field_name>Estado</incoming_field_name>
+
+         <mongo_doc_path/>
+
+         <use_incoming_field_name_as_mongo_field_name>Y</use_incoming_field_name_as_mongo_field_name>
+
+         <update_match_field>N</update_match_field>
+
+         <modifier_update_operation>N&#x2f;A</modifier_update_operation>
+
+         <modifier_policy/>
+
+         <json_field>N</json_field>
+
+      </mongo_field>
+      <mongo_field>
+         <incoming_field_name>Cidade</incoming_field_name>
+
+         <mongo_doc_path/>
+
+         <use_incoming_field_name_as_mongo_field_name>Y</use_incoming_field_name_as_mongo_field_name>
+
+         <update_match_field>N</update_match_field>
+
+         <modifier_update_operation>N&#x2f;A</modifier_update_operation>
+
+         <modifier_policy/>
+
+         <json_field>N</json_field>
+
+      </mongo_field>
+    </mongo_fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>192</xloc>
+      <yloc>587</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Exportar para arquivo</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>&#x2f;media&#x2f;4A36DEEE36DED9D1&#x2f;bin&#x2f;Resultados2012</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>baires</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nomepai</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>causa</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nomemae</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nome</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>idade</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Estado</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>2</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Cidade</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>23</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>57</xloc>
+      <yloc>478</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Retirada de repeti&#xe7;&#xf5;es 2</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <count_rows>N</count_rows>
+      <count_field/>
+      <reject_duplicate_row>N</reject_duplicate_row>
+      <error_description/>
+    <fields>      <field>        <name>nome</name>
+        <case_insensitive>N</case_insensitive>
+        </field>      </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>332</xloc>
+      <yloc>479</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+
+</transformation>
